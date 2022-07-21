@@ -1,0 +1,8 @@
+﻿<metadata>
+	<attr path="/api/package[@name='com.movesense.mds']" name="managedName">Kaasa.Mds.Android</attr>
+	<attr path="/api/package[@name='com.movesense.mds']/class[@name='BLEWrapper.ConnectedDevices']/field[@name='connectedDevices']" name="managedName">Devices</attr>
+	<attr path="/api/package[@name='com.movesense.mds']/class[@name='BLEWrapper.WbAddress']/field[@name='wbAddress']" name="managedName">Address</attr>
+	<attr path="/api/package[@name='com.movesense.mds']/interface[@name='MdsNotificationListener']/method[@name='onError']" name="argsType">NotificationListenerErrorEventArgs</attr>
+	<attr path="/api/package[@name='com.movesense.mds']/interface[@name='MdsResponseListener']/method[@name='onError']" name="argsType">ResponseListenerErrorEventArgs</attr>
+	<remove-node path="/api/package[@name='com.movesense.mds']/interface[@name='MdsResponseListener']/method[@name='onSuccess' and count(parameter)=1 and parameter[1][@type='java.lang.String']]"/>
+</metadata>

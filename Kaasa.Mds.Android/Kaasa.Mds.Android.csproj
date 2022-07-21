@@ -1,0 +1,50 @@
+<Project Sdk="MSBuild.Sdk.Extras/3.0.44">
+	<PropertyGroup>
+		<TargetFrameworks>MonoAndroid10.0;net6.0-android</TargetFrameworks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<Version>1.0.0</Version>
+		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<AssemblyFileVersion>1.0.0</AssemblyFileVersion>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<AssemblyName>Kaasa.Mds.Android</AssemblyName>
+		<RootNamespace>Kaasa.Mds.Android</RootNamespace>
+		<PackageId>Kaasa.Mds.Android</PackageId>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Authors>Kaasa solution GmbH</Authors>
+		<Title>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Title>
+		<Summary>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Summary>
+		<Description>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Description>
+		<Copyright>© 2022 Kaasa solution GmbH. – All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</RepositoryUrl>
+		<PackOnBuild>true</PackOnBuild>
+		<Owners>Kaasa</Owners>
+		<PackageProjectUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</PackageProjectUrl>
+		<PackageTags>xamarin, xamarin.forms, maui, .net, android, ios, plugin</PackageTags>
+		<PackageReleaseNotes>https://github.com/kaasa-solution/Kaasa.Mds.Android</PackageReleaseNotes>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+		<SupportedOSPlatformVersion>21.0</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+	</PropertyGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+		<LibraryProjectZip Include="*.aar" />
+		<TransformFile Include="Transforms\*.xml" />
+	</ItemGroup>
+
+	<ItemGroup Condition=" $(TargetFramework.StartsWith('net6.0-android')) ">
+		<AndroidLibrary Update="**\*.aar" Pack="false" />
+		<None Update="**\*.aar" Pack="true" PackagePath="lib\$(TargetFramework)$(TargetPlatformVersion)" />
+	</ItemGroup>
+</Project>
