@@ -1,9 +1,8 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32708.82
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaasa.Mds.Android", "Kaasa.Mds.Android\Kaasa.Mds.Android.csproj", "{9F7D15CA-7524-4AA0-93BA-0D6AE4A7DD3F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kaasa.Mds.Android", "Kaasa.Mds.Android\Kaasa.Mds.Android.csproj", "{9F7D15CA-7524-4AA0-93BA-0D6AE4A7DD3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

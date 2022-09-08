@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Kaasa.Mds.Android</id>
+    <version>1.0.1</version>
+    <title>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</title>
+    <authors>Kaasa solution GmbH</authors>
+    <projectUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</projectUrl>
+    <description>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</description>
+    <releaseNotes>https://github.com/kaasa-solution/Kaasa.Mds.Android</releaseNotes>
+    <copyright>© 2022 Kaasa solution GmbH. – All rights reserved.</copyright>
+    <tags>xamarin, xamarin.forms, maui, .net, android, ios, plugin</tags>
+    <repository url="https://github.com/kaasa-solution/Kaasa.Mds.Android" />
+    <dependencies>
+      <group targetFramework="MonoAndroid10.0" />
+      <group targetFramework="net6.0-android31.0" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid10.0" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid10.0\Kaasa.Mds.Android.dll" target="lib\monoandroid10.0\Kaasa.Mds.Android.dll" />
+    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid10.0\Kaasa.Mds.Android.xml" target="lib\monoandroid10.0\Kaasa.Mds.Android.xml" />
+    <file src="Kaasa.Mds.Android\build\NET\net6.0-android\Kaasa.Mds.Android.dll" target="lib\net6.0-android31.0\Kaasa.Mds.Android.dll" />
+    <file src="Kaasa.Mds.Android\build\NET\net6.0-android\Kaasa.Mds.Android.xml" target="lib\net6.0-android31.0\Kaasa.Mds.Android.xml" />
+    <file src="Kaasa.Mds.Android\mdslib-1.68.0.aar" target="lib\net6.0-android31.0\mdslib-1.68.0.aar" />
+  </files>
+</package>

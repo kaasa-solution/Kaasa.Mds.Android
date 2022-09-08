@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0-android</TargetFramework>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+		<NeutralLanguage>en</NeutralLanguage>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IsBindingProject>true</IsBindingProject>
+		<Version>1.0.1</Version>
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<AssemblyFileVersion>1.0.1</AssemblyFileVersion>
+		<AssemblyName>Kaasa.Mds.Android</AssemblyName>
+		<RootNamespace>Kaasa.Mds.Android</RootNamespace>
+		<PackageId>Kaasa.Mds.Android</PackageId>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Authors>Kaasa solution GmbH</Authors>
+		<Title>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Title>
+		<Summary>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Summary>
+		<Description>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</Description>
+		<Copyright>© 2022 Kaasa solution GmbH. – All rights reserved.</Copyright>
+		<RepositoryUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</RepositoryUrl>
+		<Owners>Kaasa</Owners>
+		<OutputPath>build/NET</OutputPath>
+		<IntermediateOutputPath>build/NET</IntermediateOutputPath>
+		<PackageProjectUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</PackageProjectUrl>
+		<PackageTags>xamarin, xamarin.forms, maui, .net, android, ios, plugin</PackageTags>
+		<PackageReleaseNotes>https://github.com/kaasa-solution/Kaasa.Mds.Android</PackageReleaseNotes>
+		<DefineConstants>$(DefineConstants);</DefineConstants>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
+		<DebugType>full</DebugType>
+		<DebugSymbols>true</DebugSymbols>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
+	</PropertyGroup>
+</Project>
