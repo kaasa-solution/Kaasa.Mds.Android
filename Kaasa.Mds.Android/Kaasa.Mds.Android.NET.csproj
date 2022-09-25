@@ -7,9 +7,9 @@
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<IsBindingProject>true</IsBindingProject>
-		<Version>1.0.1</Version>
-		<AssemblyVersion>1.0.1</AssemblyVersion>
-		<AssemblyFileVersion>1.0.1</AssemblyFileVersion>
+		<Version>1.1.0</Version>
+		<AssemblyVersion>1.1.0</AssemblyVersion>
+		<AssemblyFileVersion>1.1.0</AssemblyFileVersion>
 		<AssemblyName>Kaasa.Mds.Android</AssemblyName>
 		<RootNamespace>Kaasa.Mds.Android</RootNamespace>
 		<PackageId>Kaasa.Mds.Android</PackageId>
@@ -36,4 +36,14 @@
 
 	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
 	</PropertyGroup>
+
+	<ItemGroup>
+		<AndroidLibrary Remove="*.jar" />
+		<EmbeddedResource Include="*.jar" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Android.ReactiveX.RxAndroid" Version="2.1.1.1" />
+		<PackageReference Include="Xamarin.Android.ReactiveX.RxJava" Version="2.2.21.7" />
+	</ItemGroup>
 </Project>

@@ -1,15 +1,15 @@
 <Project Sdk="MSBuild.Sdk.Extras/3.0.44">
 	<PropertyGroup>
-		<TargetFramework>MonoAndroid10.0</TargetFramework>
+		<TargetFramework>MonoAndroid12.0</TargetFramework>
 		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
 		<NeutralLanguage>en</NeutralLanguage>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>disabled</ImplicitUsings>
 		<IsBindingProject>true</IsBindingProject>
-		<Version>1.0.1</Version>
-		<AssemblyVersion>1.0.1</AssemblyVersion>
-		<AssemblyFileVersion>1.0.1</AssemblyFileVersion>
+		<Version>1.1.0</Version>
+		<AssemblyVersion>1.1.0</AssemblyVersion>
+		<AssemblyFileVersion>1.1.0</AssemblyFileVersion>
 		<AssemblyName>Kaasa.Mds.Android</AssemblyName>
 		<RootNamespace>Kaasa.Mds.Android</RootNamespace>
 		<PackageId>Kaasa.Mds.Android</PackageId>
@@ -37,8 +37,14 @@
 	<PropertyGroup Condition=" '$(Configuration)'=='Release' ">
 	</PropertyGroup>
 
-	<ItemGroup Condition=" $(TargetFramework.StartsWith('MonoAndroid')) ">
+	<ItemGroup>
+		<TransformFile Include="Transforms/*.xml" />
 		<LibraryProjectZip Include="*.aar" />
-		<TransformFile Include="Transforms\*.xml" />
+		<EmbeddedReferenceJar Include="*.jar" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Xamarin.Android.ReactiveX.RxAndroid" Version="2.1.1.1" />
+		<PackageReference Include="Xamarin.Android.ReactiveX.RxJava" Version="2.2.21.7" />
 	</ItemGroup>
 </Project>

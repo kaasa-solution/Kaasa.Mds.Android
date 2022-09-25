@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>Kaasa.Mds.Android</id>
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <title>Xamarin and .NET MAUI wrapper around Movesense Mobile library for Android.</title>
     <authors>Kaasa solution GmbH</authors>
     <projectUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</projectUrl>
@@ -12,18 +12,24 @@
     <tags>xamarin, xamarin.forms, maui, .net, android, ios, plugin</tags>
     <repository url="https://github.com/kaasa-solution/Kaasa.Mds.Android" />
     <dependencies>
-      <group targetFramework="MonoAndroid10.0" />
-      <group targetFramework="net6.0-android31.0" />
+    <group targetFramework="MonoAndroid12.0">
+        <dependency id="Xamarin.Android.ReactiveX.RxAndroid" version="2.1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Android.ReactiveX.RxJava" version="2.2.21.7" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net6.0-android31.0">
+        <dependency id="Xamarin.Android.ReactiveX.RxAndroid" version="2.1.1.1" exclude="Build,Analyzers" />
+        <dependency id="Xamarin.Android.ReactiveX.RxJava" version="2.2.21.7" exclude="Build,Analyzers" />
+      </group>
     </dependencies>
     <frameworkAssemblies>
-      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid10.0" />
+      <frameworkAssembly assemblyName="Java.Interop" targetFramework="MonoAndroid12.0" />
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid10.0\Kaasa.Mds.Android.dll" target="lib\monoandroid10.0\Kaasa.Mds.Android.dll" />
-    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid10.0\Kaasa.Mds.Android.xml" target="lib\monoandroid10.0\Kaasa.Mds.Android.xml" />
+    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid12.0\Kaasa.Mds.Android.dll" target="lib\monoandroid12.0\Kaasa.Mds.Android.dll" />
+    <file src="Kaasa.Mds.Android\build\Xamarin\monoandroid12.0\Kaasa.Mds.Android.xml" target="lib\monoandroid12.0\Kaasa.Mds.Android.xml" />
     <file src="Kaasa.Mds.Android\build\NET\net6.0-android\Kaasa.Mds.Android.dll" target="lib\net6.0-android31.0\Kaasa.Mds.Android.dll" />
     <file src="Kaasa.Mds.Android\build\NET\net6.0-android\Kaasa.Mds.Android.xml" target="lib\net6.0-android31.0\Kaasa.Mds.Android.xml" />
-    <file src="Kaasa.Mds.Android\mdslib-1.68.0.aar" target="lib\net6.0-android31.0\mdslib-1.68.0.aar" />
+    <file src="Kaasa.Mds.Android\mdslib-1.68.0-release.aar" target="lib\net6.0-android31.0\mdslib-1.68.0-release.aar" />
   </files>
 </package>
