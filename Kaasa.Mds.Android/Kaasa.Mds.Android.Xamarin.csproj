@@ -38,7 +38,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<TransformFile Include="Transforms/*.xml" />
+		<TransformFile Include="Transforms\*.xml" />
 		<LibraryProjectZip Include="*.aar" />
 		<EmbeddedReferenceJar Include="*.jar" />
 	</ItemGroup>
