@@ -27,6 +27,8 @@
 		<IsBindingProject>true</IsBindingProject>
 		<PackOnBuild>true</PackOnBuild>
 		<UseMaui>true</UseMaui>
+		<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -39,6 +41,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<None Include="..\LICENSE.md" Pack="true" PackagePath="" />
+		<None Include="..\README.md" Pack="true" PackagePath="" />
 		<PackageReference Include="Xamarin.Android.ReactiveX.RxAndroid" Version="2.1.1.1" />
 		<PackageReference Include="Xamarin.Android.ReactiveX.RxJava" Version="2.2.21.8" />
 	</ItemGroup>
