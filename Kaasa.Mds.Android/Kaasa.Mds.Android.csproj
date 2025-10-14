@@ -1,13 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net7.0-android</TargetFramework>
+		<TargetFramework>net10.0-android</TargetFramework>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<NeutralLanguage>en</NeutralLanguage>
-		<Version>1.4.0</Version>
-		<AssemblyVersion>1.4.0</AssemblyVersion>
-		<AssemblyFileVersion>1.4.0</AssemblyFileVersion>
+		<Version>2.0.0</Version>
+		<AssemblyVersion>2.0.0</AssemblyVersion>
+		<AssemblyFileVersion>2.0.0</AssemblyFileVersion>
 		<PackageId>Kaasa.Mds.Android</PackageId>
 		<AssemblyName>Kaasa.Mds.Android</AssemblyName>
 		<RootNamespace>Kaasa.Mds.Android</RootNamespace>
@@ -17,7 +17,7 @@
 		<Title>.NET wrapper around Movesense Mobile library for Android.</Title>
 		<Summary>.NET wrapper around Movesense Mobile library for Android.</Summary>
 		<Description>.NET wrapper around Movesense Mobile library for Android.</Description>
-		<Copyright>© 2023 Kaasa solution GmbH. – All rights reserved.</Copyright>
+		<Copyright>© 2025 Kaasa solution GmbH. – All rights reserved.</Copyright>
 		<PackageTags>plugin, .net, movesense</PackageTags>
 		<RepositoryUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</RepositoryUrl>
 		<PackageProjectUrl>https://github.com/kaasa-solution/Kaasa.Mds.Android</PackageProjectUrl>
